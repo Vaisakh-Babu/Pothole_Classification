@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <img src="{{ data[0] }}" alt="User Image">
+    <h4>{{data[1]}}</h4>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Image capture</title>
+  </head>
+  <body>
+    <div class="container">
+      {% if message %}
+      <p class="message">{{ message | safe }}</p>
+      {% endif %}
+      <div class='page_header'>
+        <h1>Capturing Image from Webcam</h1>
+      </div>
+      <div>
+          <p>Please stay still infront of the Webcam  and click the below button for taking the picture</p>
+      </div>
+      <div>
+        <form action="/live_capture" method="POST">
+            <input type="submit" value="Click Here" class="btn" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
